@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: rgb(88, 180, 130);
+  transition: background 1s ease;
+  position: relative;
+}
+
+.message {
+  position: absolute;
+  margin-top: 47%;
+  margin-left: 29%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.number {
+  position: absolute;
+  top: 57%;
+  margin-left: 50%;
+}
+
+.field-name,
+.field-email,
+.field-password,
+.field-finish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.field-name i,
+.field-email i,
+.field-password i,
+.field-finish i {
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.inactive {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 50%);
+}
+
+div.acitve {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%);
+}
+
+.field-name input,
+.field-email input,
+.field-password input {
+  background: none;
+  border: none;
+  flex: 1;
+  height: 100%;
+  outline: none;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}

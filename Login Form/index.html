@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color LoginForm</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="message" id="message"></div>
+      <div class="number" id="number">1 of 3</div>
+      <div class="field-name">
+        <div class="error"></div>
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-email inactive">
+        <i class="fas fa-envelope"></i>
+        <input type="email" required placeholder="Email" />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-password inactive">
+        <i class="fas fa-key"></i>
+        <input type="password" required placeholder="password" />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-finish inactive">
+        <i class="fas fa-heart"></i>
+        <p>Thank you!</p>
+        <i class="fas fa-heart"></i>
+      </div>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
